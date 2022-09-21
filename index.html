@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/png"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Fashion Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="row container d-flex">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo">
+          </div>
+          <div class="nav-list d-flex">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Pages</a>
+            <a href="#">About Us</a>
+            <a href="#">Lookups</a>
+            <div class="close">
+              <i class='bx bx-x'></i>
+            </div>
+            <a href="#" class="user-link">Login</a>
+          </div>
+          <div class="icons d-flex">
+            <div class="icon d-flex">
+              <i class='bx bx-search'></i>
+            </div>
+            <div class="icon d-flex user-icon">
+              <i class='bx bxs-user'></i>
+            </div>
+            <div class="icon d-flex">
+              <i class='bx bxs-bell' ></i>
+              <span></span>
+            </div>
+          </div>
+          <div class="hamburger">
+            <i class='bx bx-menu-alt-right'></i>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero__desc">
+          <small>Limited Time Only For Winter</small>
+          <h1>fashion</h1>
+          <p>LOOK YOUR BEST ON YOUR BEST DAY</p>
+          <button class="btn">Explore Now!</button>
+        </div>
+        <div class="hero__image">
+          <img src="./images/woman-in-cart.png" alt="">
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main__topCollection">
+        <div class="main__section-header">
+          <p class="main__section-header_info">COLLECTION</p>
+          <h1 class="main__section-header_title">Our Top Collection</h1>
+        </div>
+        <div class="main__topCollection">
+          <div class="main__topCollection-categories">
+            <button class="btn" onclick="topCollections('Jewellery')">Jewellery</button>
+            <button class="btn" onclick="topCollections('Accessories')">Accessories</button>
+            <button class="btn" onclick="topCollections('Dresses')">Dresses</button>
+            <button class="btn" onclick="topCollections('Footwear')">Footwear</button>
+          </div>
+          <div class="main__topCollection-cards">
+            <!---->
+            <div class="main__topCollection-cards_card">
+              <div class="main__topCollection-cards_card-header">
+                <img src="./images/product-1.png" alt="">
+                <i class='bx bxs-heart' ></i>
+              </div>
+              <div class="main__topCollection-cards_card-desc">
+                <h1>
+                  Nike Air Men's Hoodie -  Imported 
+                  Hoodie Red
+                </h1>
+                <div>
+                  <p>$150</p>
+                  <div>
+                    <img src="./images/star.svg" alt="star">
+                    <img src="./images/star.svg" alt="star">
+                    <img src="./images/star.svg" alt="star">
+                    <img src="./images/star.svg" alt="star">
+                    <img src="./images/star.svg" alt="star">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main__topCollection-cards_card">
+              <div class="main__topCollection-cards_card-header">
+                <img src="./images/product-2.png" alt="">
+                <i class='bx bxs-heart' ></i>
+              </div>
+              <div class="main__topCollection-cards_card-desc">
+                <h1>
+                  Armani Frok Ladies -  Imported 
+                  Fork Blue
+                </h1>
+                <div>
+                  <p>$250</p>
+                  <div>
+                    <img src="./images/star.svg" alt="star">
+                    <img src="./images/star.svg" alt="star">
+                    <img src="./images/star.svg" alt="star">
+                    <img src="./images/star.svg" alt="star">
+                    <img src="./images/star.svg" alt="star">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main__topCollection-cards_card">
+              <div class="main__topCollection-cards_card-header">
+                <img src="./images/product-3.png" alt="">
+                <i class='bx bxs-heart' ></i>
+              </div>
+              <div class="main__topCollection-cards_card-desc">
+                <h1>
+                  Apple Watch Series 6 - Sliver Band
+                </h1>
+                <div>
+                  <p>$150</p>
+                  <div>
+                    <img src="./images/star.svg" alt="star">
+                    <img src="./images/star.svg" alt="star">
+                    <img src="./images/star.svg" alt="star">
+                    <img src="./images/star.svg" alt="star">
+                    <img src="./images/star.svg" alt="star">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---->
+          </div>
+        </div>
+      </section>
+      <section class="main__newLatestCollection">
+        <div class="main__section-header">
+          <p class="main__section-header_info">New Arrival</p>
+          <h1 class="main__section-header_title">Latest Collection</h1>
+        </div>
+        <div class="main__newLastCollection-images">
+          <div class="two-images">
+            <div class="main__newLastCollection-image">
+              <img src="./images/poster-1.png" alt="">
+              <p>
+                2021 Trends <br>
+                Women's Smart Skirt
+              </p>
+            </div>
+            <div class="main__newLastCollection-image">
+              <img src="./images/poster-2.png" alt="">
+              <p>
+                2021 Trends <br>
+                Women's Smart Skirt
+              </p>
+            </div>
+          </div>
+          <div class="main__newLastCollection-image img3">
+            <img src="./images/poster-3.png" alt="">
+            <p>
+              2021 Trends <br>
+              Women's Smart Shirt <br> <br>
+              Discover More:
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="main__lastCollection">
+        <div class="main__section-header">
+          <p class="main__section-header_info">CATEGORIES</p>
+          <h1 class="main__section-header_title">2021 Latest Collection</h1>
+        </div>
+        <div class="main__lastCollection-cards">
+        </div>
+        <div class="main__lastCollection-more">
+          <button class="btn" id="load-more" onclick="loadMore()">Load More</button>
+        </div>
+      </section>
+      <section class="main__stats">
+        <div class="main__section-header">
+          <p class="main__section-header_info">STATS</p>
+          <h1 class="main__section-header_title">Our Statistics</h1>
+        </div>
+        <div class="main__stats-cards">
+          <div class="main__stats-cards_card">
+            <div class="main__stats-cards_card">
+              <div class="main__stats-cards_card-icon">
+                <i class='bx bxs-check-square'></i>
+              </div>            
+              <div class="main__stats-cards_card-desc">
+                <h1>Easy Order System </h1>
+                <p>Lorem Ispum is a placeholder text 
+                  commomly used as a free text.</p>
+              </div>
+            </div>
+          </div>
+          <div class="main__stats-cards_card">
+            <div class="main__stats-cards_card-icon">
+              <i class='bx bxs-package'></i>
+            </div>   
+            <div class="main__stats-cards_card-desc">
+              <h1>On Time Delievery</h1>
+              <p>Lorem Ispum is a placeholder text 
+                commomly used as a free text.</p>
+            </div>
+          </div>
+          <div class="main__stats-cards_card">
+            <div class="main__stats-cards_card-icon">
+              <i class='bx bxs-dollar-circle'></i>
+            </div>
+            <div class="main__stats-cards_card-desc">
+              <h1>Money Back Gaurantee</h1>
+              <p>Lorem Ispum is a placeholder text 
+                commomly used as a free text.</p>
+            </div>
+          </div>
+          <div class="main__stats-cards_card">
+            <div class="main__stats-cards_card-icon">
+              <i class='bx bxs-user'></i>
+            </div>    
+            <div class="main__stats-cards_card-desc">
+              <h1>24/7 Customer Support</h1>
+              <p>Lorem Ispum is a placeholder text 
+                commomly used as a free text.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__blogs">
+        <div class="main__section-header">
+          <p class="main__section-header_info">BLOGS</p>
+          <h1 class="main__section-header_title">Latest News</h1>
+        </div>
+        <div class="main__blogs-cards">
+          <div class="main__blogs-cards_card">
+            <div class="main__blogs-cards_card-image">
+              <img src="./images/blog-1.png" alt="">
+            </div>
+            <div class="main__blogs-cards_card-desc">
+              <h1>Trendy</h1>
+              <p>Lorem Ispum is a placeholder text 
+                commomly used as a free text.</p>
+              <small>10 January 2021</small>
+            </div>
+          </div>
+          <div class="main__blogs-cards_card">
+            <div class="main__blogs-cards_card-image">
+              <img src="./images/blog-2.png" alt="">
+            </div>
+            <div class="main__blogs-cards_card-desc">
+              <h1>Trendy</h1>
+              <p>Lorem Ispum is a placeholder text 
+                commomly used as a free text.</p>
+              <small>10 January 2021</small>
+            </div>
+          </div>
+          <div class="main__blogs-cards_card">
+            <div class="main__blogs-cards_card-image">
+              <img src="./images/blog-3.png" alt="">
+            </div>
+            <div class="main__blogs-cards_card-desc">
+              <h1>Trendy</h1>
+              <p>Lorem Ispum is a placeholder text 
+                commomly used as a free text.</p>
+              <small>10 January 2021</small>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <article class="footer__company">
+        <ul>
+          <li>
+            <img src="./images/logo.svg" alt="codevo logo">
+          </li>
+          <li>
+            <p>Lorem ispum is a placeholder text 
+              commonly used as a free text.
+            </p>
+          </li>
+          <li class="footer__company-socialMedia">
+            <i class='bx bxl-facebook' ></i>
+            <i class='bx bxl-twitter'></i>
+            <i class='bx bxl-instagram-alt'></i>
+            <i class='bx bxl-youtube'></i>
+          </li>
+          <li class="footer__company-copyrights">
+            <p>
+              Copyrights 2021 <br>
+              @Iamabdulqadeer01
+            </p>
+          </li>
+        </ul>
+      </article>
+      <article class="footer__product">
+        <ul>
+          <h1>Product</h1>
+          <li>Download</li>
+          <li>Pricing</li>
+          <li>Locations</li>
+          <li>Server</li>
+          <li>Countries</li>
+        </ul>
+      </article>
+      <article class="footer__category">
+        <ul>
+          <h1>Category</h1>
+          <li>Men</li>
+          <li>Women</li>
+          <li>Kids</li>
+          <li>Best Seller</li>
+          <li>New Arrivals</li>
+        </ul>
+      </article>
+      <article class="footer__myaccount">
+        <ul>
+          <h1>My Account</h1>
+          <li>My Account</li>
+          <li>Discount</li>
+          <li>Returns</li>
+          <li>Order History</li>
+          <li>Order Tracking</li>
+        </ul>
+      </article>
+      <article class="footer__contactus">
+        <ul>
+          <h1>Contact Us</h1>
+          <li>
+            <i class='bx bx-current-location'></i>
+            <p>123 Street Trafford, London, UK</p>
+          </li>
+          <li>
+            <i class='bx bxs-envelope' ></i>
+            <p>info@sitename.com</p>
+          </li>
+          <li>
+            <i class='bx bxs-phone'></i>
+            <p>+456 789 789 001</p>
+          </li>
+        </ul>
+      </article>
+    </footer>
+
+    <!-- ====== Login and Signup Form ====== -->
+
+    <!-- ====== SwiperJs ====== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- ====== Custom Script ====== -->
+    <script src="./js/product.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
